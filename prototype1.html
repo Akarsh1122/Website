@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where Is My Bus</title>
+    <link rel="stylesheet" href="prototype1.css">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAy6G6VY3laghmLxZgLu8S2urJNCmd6oZw&callback=initMap"></script>
+
+</head>
+<body>
+    <header>
+        <h1 class="main-title">Where Is My Bus</h1>
+        <nav>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div id="map"></div>
+    </header>
+
+    <main>
+        <section id="bus-schedules">
+            <div class="icon-heading">
+                <img src="bus_icon.png" alt="Bus Icon">
+                <h2>Bus Schedules</h2>
+            </div>
+            <div id="schedule-list"></div>
+        </section>
+
+        <section id="bus-history">
+            <div class="icon-heading">
+                <img src="history_icon.png" alt="History Icon">
+                <h2>Bus History</h2>
+            </div>
+            <div id="history-list"></div>
+            <button onclick="fetchBusHistory()">Load History</button>
+        </section>
+
+        <section id="notifications">
+            <div class="icon-heading">
+                <img src="notification_icon.png" alt="Notification Icon">
+                <h2>Notifications</h2>
+            </div>
+            <div id="notification-list"></div>
+        </section>
+
+        <section id="faq">
+            <button id="faq-button">FAQ?</button>
+            <div id="faq-dialog" class="dialog-box">
+                <h3>Frequently Asked Questions</h3>
+                <p>What is this service?</p>
+                <p>This service provides real-time bus tracking and schedules.</p>
+                <button onclick="closeFAQ()">Close</button>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We provide real-time bus tracking services with accurate schedules and route information.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: akarshraj12d@gmail.com</p>
+            <p>Phone: +91 8176955919</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Where Is My Bus. All Rights Reserved.</p>
+    </footer>
+
+    <script src="prototype1.js"></script>
+</body>
+</html>

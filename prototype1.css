@@ -1,0 +1,150 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+}
+
+header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Title */
+.main-title {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#map {
+    height: 400px;
+    margin-top: 20px;
+}
+
+/* Section Styles */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 1.8em;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Icon Heading */
+.icon-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.icon-heading img {
+    width: 32px;
+    height: 32px;
+}
+
+/* About and Contact Sections */
+#about, #contact {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#about h2, #contact h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#about p, #contact p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Bus Schedule & History */
+.schedule-record, .history-record {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* FAQ Dialog */
+.dialog-box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    z-index: 1000;
+}
+
+#faq-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.history-record .on-time {
+    color: #28a745;
+}
+
+.history-record .delayed {
+    color: #dc3545;
+}
+
+#faq-button:hover {
+    background-color: #357ab8;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4a90e2;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
